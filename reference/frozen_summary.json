@@ -1,0 +1,884 @@
+{
+  "evidence_freeze": "2026-08-15",
+  "failure_definition": {
+    "absolute_error_margin": 1e-06,
+    "reference": "unmitigated sampled expectation",
+    "rule": "candidate absolute error > reference absolute error + margin"
+  },
+  "hardware_jobs_submitted": 0,
+  "headline": {
+    "archived_hardware": {
+      "effects": {
+        "noisy": {
+          "rf": {
+            "ci_high": -0.04640561044988621,
+            "ci_low": -0.049099899332631085,
+            "draws": 10000,
+            "estimate": -0.04775300047895786
+          },
+          "zne": {
+            "ci_high": -0.010592108738376849,
+            "ci_low": -0.012793732999945013,
+            "draws": 10000,
+            "estimate": -0.011706305452015363
+          }
+        },
+        "rf": {
+          "noisy": {
+            "ci_high": 0.04911032066446466,
+            "ci_low": 0.04640456301009807,
+            "draws": 10000,
+            "estimate": 0.04775300047895786
+          },
+          "zne": {
+            "ci_high": 0.03730577185319604,
+            "ci_low": 0.03476608812430016,
+            "draws": 10000,
+            "estimate": 0.03604669502694251
+          }
+        },
+        "zne": {
+          "noisy": {
+            "ci_high": 0.012796695836932305,
+            "ci_low": 0.010606212115194667,
+            "draws": 10000,
+            "estimate": 0.011706305452015363
+          },
+          "rf": {
+            "ci_high": -0.0347268227037851,
+            "ci_low": -0.0373339282866041,
+            "draws": 10000,
+            "estimate": -0.03604669502694251
+          }
+        }
+      },
+      "metrics": {
+        "noisy": {
+          "circuit_failure_rate": 0.0,
+          "failure_rate": 0.0,
+          "interval_joint_coverage": 0.8944,
+          "interval_marginal_coverage": 0.9706,
+          "interval_mean_width": 0.5190199324530086,
+          "mae": 0.08717507315328293,
+          "p95_absolute_error": 0.2182830183279242,
+          "physical_range_violation_rate": 0.0,
+          "rmse": 0.1171345651012646,
+          "worst_depth_mae": 0.0988288863909505
+        },
+        "rf": {
+          "circuit_failure_rate": 0.5212,
+          "failure_rate": 0.1876,
+          "interval_joint_coverage": 0.904,
+          "interval_marginal_coverage": 0.9697,
+          "interval_mean_width": 0.35705557980338043,
+          "mae": 0.03942207267432508,
+          "p95_absolute_error": 0.1436797307933021,
+          "physical_range_violation_rate": 0.0,
+          "rmse": 0.07425939695533038,
+          "worst_depth_mae": 0.06082931657476739
+        },
+        "zne": {
+          "circuit_failure_rate": 0.878,
+          "failure_rate": 0.4419,
+          "interval_joint_coverage": 0.9,
+          "interval_marginal_coverage": 0.9728,
+          "interval_mean_width": 0.45159770085217543,
+          "mae": 0.07546876770126759,
+          "p95_absolute_error": 0.19352381795423182,
+          "physical_range_violation_rate": 0.0057,
+          "rmse": 0.10450710542015225,
+          "worst_depth_mae": 0.09430392255590965
+        }
+      },
+      "resources": {
+        "interpretation": "historical source accounting, not newly billed or submitted QPU time",
+        "ml_qem_total_circuit_executions_reported": 3000,
+        "ml_qem_total_shots_equivalent": 30000000,
+        "source_reported_overall_reduction_fraction": 0.4,
+        "source_reported_runtime_reduction_fraction": 0.5,
+        "source_reported_training_qpu_hours_at_assumed_2khz": 0.7,
+        "zne_total_circuit_executions_reported": 5000,
+        "zne_total_shots_equivalent": 50000000
+      }
+    },
+    "benchmark_identity": {
+      "dataset_family_id": "ml4qem-reuse-local-4q-v1",
+      "dataset_instance_id": "ml4qem-reuse-local-4q-v1-seed271828"
+    },
+    "model_storage": {
+      "compression": "joblib compress=3",
+      "file_count": 20,
+      "fitted_estimators": {
+        "folds": 5,
+        "model_seed": 0,
+        "models_per_fold": 4,
+        "training_base_circuits_per_fold": 512
+      },
+      "measurement": "sum of regular-file logical sizes",
+      "models_distributed": false,
+      "reason_omitted": "optional reproducible intermediates; frozen predictions and complete refit code are supplied",
+      "serialized_bytes": 149115554,
+      "serialized_decimal_megabytes": 149.115554,
+      "serialized_mebibytes": 142.207674,
+      "verification": {
+        "command_exit_status": 0,
+        "model_file_manifest_definition": "CSV header plus 20 rows sorted by filename; each row is filename, logical byte size, and SHA-256",
+        "model_file_manifest_path": "results/resources/v2/model_storage_seed0_files.csv",
+        "model_file_manifest_sha256": "cace7157deb9fe8ce643e3ccda047ae20cdacad80956123f27e4c6245b58d57b",
+        "new_qpu_jobs": 0,
+        "resource_audit_outputs": {
+          "distributed": false,
+          "model_dir": "models/resources/v2/model_storage_seed0",
+          "prediction_path": "results/resources/v2/model_storage_audit_seed0_predictions.npz",
+          "prediction_sha256": "a995898cb522f8149c550934132363f09f913fed546afa182d401a22bb957d8b",
+          "result_path": "results/resources/v2/model_storage_audit_seed0.json",
+          "result_sha256": "47c19b96d264a29ffedad163d95482dbb79f3be844dbba02005348be3e8aea05"
+        },
+        "scientific_prediction_equivalence": {
+          "comparison_path": "results/resources/v2/model_storage_seed0_repeat_equivalence.json",
+          "comparison_sha256": "badd4a60b003f705a6e14713438df02cc453d94ee02124c31e608d2b3c0ec4d2",
+          "global_max_absolute_difference": 5.551115123125783e-17,
+          "reference_path": "results/confirmation/v2/local_within_n512_folds0-4_seed0_predictions.npz",
+          "reference_sha256": "c93379cb5dce701c8effaa9c1d4ac866d64571b75e34a0d2cb801f3e4c80ecf4"
+        }
+      }
+    },
+    "observable_transfer_exploratory_tier_cell": {
+      "effect_vs_unmitigated": {
+        "ci_high": -0.0006963896954496809,
+        "ci_low": -0.003811668926927047,
+        "draws": 10000,
+        "estimate": -0.002284602131035304,
+        "signflip_p_value_two_sided": 0.0045995400459954
+      },
+      "metrics": {
+        "failure_rate": 0.4454330632716049,
+        "interval_base_circuit_joint_coverage": 0.9114583333333334,
+        "interval_marginal_coverage": 0.9965952932098765,
+        "interval_mean_width": 1.4117220551079224,
+        "mae": 0.08420709550100863,
+        "p95_absolute_error": 0.3296128399721939,
+        "physical_range_violation_rate": 0.006206597222222222,
+        "rmse": 0.1437930775125747,
+        "worst_family_mae": 0.13772620308360609,
+        "worst_noise_family_mae": 0.1102537528654214,
+        "worst_observable_mae": 0.08460831678662133,
+        "worst_shot_budget_mae": 0.10498216907536484,
+        "worst_strength_mae": 0.14091555886009025
+      },
+      "multiplicity_status": "exploratory metadata-conditioned diagnostic; not included in the prespecified 11-test multiplicity family"
+    },
+    "portability": {
+      "demo1_prediction_max_abs_difference": 0.0,
+      "demo2_prediction_max_abs_difference": 2.7755575615628914e-17,
+      "feature_cases": 80,
+      "feature_max_abs_difference": 2.384185791015625e-07
+    },
+    "shifts": [
+      {
+        "base_circuits": 240,
+        "candidate_mae": 0.07699432515891802,
+        "ci_high": 0.017324438374043502,
+        "ci_low": 0.014077326464800834,
+        "coverage90": 0.9236111111111112,
+        "failure_rate": 0.6357928240740741,
+        "interval_width": 0.6344739389397377,
+        "label": "hardware_efficient",
+        "method": "safe_simplex",
+        "noisy_mae": 0.06133360043168068,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": 0.015660722459599805,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 25920,
+        "scenario": "circuit_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 240,
+        "candidate_mae": 0.1336222972726706,
+        "ci_high": 0.020539886354271907,
+        "ci_low": 0.016051775928567075,
+        "coverage90": 0.6620370370370371,
+        "failure_rate": 0.6412519290123457,
+        "interval_width": 0.5803983951651674,
+        "label": "ising_trotter",
+        "method": "safe_simplex",
+        "noisy_mae": 0.11533936113119125,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": 0.01828293438449726,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 25920,
+        "scenario": "circuit_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 240,
+        "candidate_mae": 0.04915143903907139,
+        "ci_high": 0.005680702120070609,
+        "ci_low": 0.004568140807335473,
+        "coverage90": 0.9664351851851852,
+        "failure_rate": 0.597608024691358,
+        "interval_width": 0.6210881660395214,
+        "label": "random_clifford",
+        "method": "safe_simplex",
+        "noisy_mae": 0.04403430223464966,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": 0.005117137005412205,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 25920,
+        "scenario": "circuit_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 240,
+        "candidate_mae": 0.10350523575053008,
+        "ci_high": 0.007932980423886026,
+        "ci_low": 0.0039006302507216726,
+        "coverage90": 0.7755787037037037,
+        "failure_rate": 0.5260898919753086,
+        "interval_width": 0.5927646771828134,
+        "label": "warm_start_qaoa",
+        "method": "safe_simplex",
+        "noisy_mae": 0.09765475243330002,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": 0.005850481968429197,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 25920,
+        "scenario": "circuit_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 240,
+        "candidate_mae": 0.09926899218216313,
+        "ci_high": 0.0004434539959982789,
+        "ci_low": -0.0030392550628832366,
+        "coverage90": 0.7243055555555555,
+        "failure_rate": 0.4345968364197531,
+        "interval_width": 0.547798241607256,
+        "label": "layers_7_8",
+        "method": "safe_simplex",
+        "noisy_mae": 0.10060391575098038,
+        "p_value": 0.1401859814018598,
+        "p_value_at_sampling_floor": false,
+        "p_value_holm_11_tests": 0.5087491250874913,
+        "paired_difference": -0.001334924398995003,
+        "q_value_bh_11_tests": 0.1713384217133842,
+        "rows": 25920,
+        "scenario": "deep_circuits",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.06281288607869821,
+        "ci_high": 0.006506083178206338,
+        "ci_low": 0.0041556359697650334,
+        "coverage90": 0.9982638888888888,
+        "failure_rate": 0.49386574074074074,
+        "interval_width": 1.4661680808917052,
+        "label": "coherent_overrotation",
+        "method": "safe_simplex",
+        "noisy_mae": 0.05749048665165901,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": 0.005322398745700073,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 34560,
+        "scenario": "noise_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.08026341007874557,
+        "ci_high": 0.00079493385605469,
+        "ci_low": -0.0011209207007149065,
+        "coverage90": 0.9857638888888889,
+        "failure_rate": 0.4302951388888889,
+        "interval_width": 1.3891975422044638,
+        "label": "damping_dephasing",
+        "method": "safe_simplex",
+        "noisy_mae": 0.08041878044605255,
+        "p_value": 0.7441255874412559,
+        "p_value_at_sampling_floor": false,
+        "p_value_holm_11_tests": 0.7441255874412559,
+        "paired_difference": -0.00015537085162090346,
+        "q_value_bh_11_tests": 0.7441255874412559,
+        "rows": 34560,
+        "scenario": "noise_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.10160918881494845,
+        "ci_high": 0.0017049589114222822,
+        "ci_low": -0.00019564143813334103,
+        "coverage90": 0.9660590277777777,
+        "failure_rate": 0.43551070601851855,
+        "interval_width": 1.2870371674451984,
+        "label": "depolarizing_readout",
+        "method": "safe_simplex",
+        "noisy_mae": 0.10086224973201752,
+        "p_value": 0.12718728127187282,
+        "p_value_at_sampling_floor": false,
+        "p_value_holm_11_tests": 0.5087491250874913,
+        "paired_difference": 0.0007469410258743665,
+        "q_value_bh_11_tests": 0.1713384217133842,
+        "rows": 34560,
+        "scenario": "noise_family",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.1299728942059111,
+        "ci_high": -0.005088173156944743,
+        "ci_low": -0.006437920312710721,
+        "coverage90": 0.7951388888888888,
+        "failure_rate": 0.368041087962963,
+        "interval_width": 0.8218240935388562,
+        "label": "2",
+        "method": "safe_simplex",
+        "noisy_mae": 0.1357416808605194,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": -0.005768794553105781,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 34560,
+        "scenario": "noise_strength",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.09833755961407853,
+        "ci_high": -0.004015640520974581,
+        "ci_low": -0.005889399592199941,
+        "coverage90": 0.9799768518518519,
+        "failure_rate": 0.405150462962963,
+        "interval_width": 1.3358349833179741,
+        "label": "128",
+        "method": "safe_simplex",
+        "noisy_mae": 0.10329211503267288,
+        "p_value": 9.999000099990002e-05,
+        "p_value_at_sampling_floor": true,
+        "p_value_holm_11_tests": 0.0010998900109989002,
+        "paired_difference": -0.004954558448806127,
+        "q_value_bh_11_tests": 0.0001571271444284143,
+        "rows": 25920,
+        "scenario": "shot_budget",
+        "signflip_draws": 10000
+      },
+      {
+        "base_circuits": 960,
+        "candidate_mae": 0.08783637704236989,
+        "ci_high": 0.003285989939616475,
+        "ci_low": -0.0005108036262557795,
+        "coverage90": 0.91875,
+        "failure_rate": 0.4640962577160494,
+        "interval_width": 1.4005397172894598,
+        "label": "two_qubit_ZZ",
+        "method": "safe_simplex",
+        "noisy_mae": 0.08649169653654099,
+        "p_value": 0.1690830916908309,
+        "p_value_at_sampling_floor": false,
+        "p_value_holm_11_tests": 0.5087491250874913,
+        "paired_difference": 0.001344679410325983,
+        "q_value_bh_11_tests": 0.185991400859914,
+        "rows": 207360,
+        "scenario": "observable",
+        "signflip_draws": 10000
+      }
+    ],
+    "source_recovery": {
+      "figure2_max_abs_difference": 9.159339953157541e-16,
+      "figure2_missing_rows": 4,
+      "figure2_rows": 1996,
+      "figure3_cells": 270,
+      "figure3_max_abs_difference": 4.991114557761911e-07,
+      "figure4_cells": 30,
+      "figure4_max_abs_difference": 4.938419515543302e-07
+    },
+    "within_domain": {
+      "cell_diagnostic_effect_vs_noisy": {
+        "ci_high": -0.00368636580239098,
+        "ci_low": -0.0050167629122418135,
+        "draws": 10000,
+        "estimate": -0.004349863534761909,
+        "signflip_p_value_two_sided": 9.999000099990002e-05
+      },
+      "failure_sensitivity": {
+        "raw_cell_affine": {
+          "declared_margin": 0.4708116319444444,
+          "strict_zero_margin": 0.47086226851851853
+        },
+        "rf": {
+          "declared_margin": 0.48920476466049384,
+          "strict_zero_margin": 0.4935956790123457
+        },
+        "safe_cell_simplex": {
+          "declared_margin": 0.40241367669753086,
+          "strict_zero_margin": 0.40263792438271606
+        },
+        "safe_ridge": {
+          "declared_margin": 0.45741222993827163,
+          "strict_zero_margin": 0.45741464120370373
+        },
+        "safe_simplex": {
+          "declared_margin": 0.4207995756172839,
+          "strict_zero_margin": 0.4209032600308642
+        },
+        "simplex": {
+          "declared_margin": 0.5048369984567901,
+          "strict_zero_margin": 0.504858699845679
+        }
+      },
+      "fold_effects": [
+        {
+          "base_circuits": 192,
+          "fold": 0,
+          "mae": {
+            "noisy_sampled": 0.08111969381570816,
+            "raw_cell_affine": 0.07972844241043414,
+            "rf": 0.09431652074608357,
+            "safe_cell_simplex": 0.0773061519903926,
+            "safe_simplex": 0.07924088513126867
+          },
+          "safe_cell_effect_vs_noisy": -0.0038135418253155556,
+          "safe_simplex_effect_vs_noisy": -0.001878808684439487
+        },
+        {
+          "base_circuits": 192,
+          "fold": 1,
+          "mae": {
+            "noisy_sampled": 0.07955430448055267,
+            "raw_cell_affine": 0.07804220618005488,
+            "rf": 0.0944894124218629,
+            "safe_cell_simplex": 0.07563532423014191,
+            "safe_simplex": 0.07806337723807762
+          },
+          "safe_cell_effect_vs_noisy": -0.003918980250410764,
+          "safe_simplex_effect_vs_noisy": -0.001490927242475057
+        },
+        {
+          "base_circuits": 192,
+          "fold": 2,
+          "mae": {
+            "noisy_sampled": 0.07911630719900131,
+            "raw_cell_affine": 0.07856892608149506,
+            "rf": 0.09118124438897504,
+            "safe_cell_simplex": 0.07473731638201112,
+            "safe_simplex": 0.07808137986303951
+          },
+          "safe_cell_effect_vs_noisy": -0.004378990816990197,
+          "safe_simplex_effect_vs_noisy": -0.001034927335961805
+        },
+        {
+          "base_circuits": 192,
+          "fold": 3,
+          "mae": {
+            "noisy_sampled": 0.08124849200248718,
+            "raw_cell_affine": 0.07963962072533531,
+            "rf": 0.09376775166826305,
+            "safe_cell_simplex": 0.07720648648276593,
+            "safe_simplex": 0.08045846528405506
+          },
+          "safe_cell_effect_vs_noisy": -0.0040420055197212534,
+          "safe_simplex_effect_vs_noisy": -0.0007900267184321186
+        },
+        {
+          "base_circuits": 192,
+          "fold": 4,
+          "mae": {
+            "noisy_sampled": 0.07691372185945511,
+            "raw_cell_affine": 0.07617983311907583,
+            "rf": 0.08765186678534533,
+            "safe_cell_simplex": 0.07131792999494338,
+            "safe_simplex": 0.07399167702512728
+          },
+          "safe_cell_effect_vs_noisy": -0.005595791864511729,
+          "safe_simplex_effect_vs_noisy": -0.0029220448343278277
+        }
+      ],
+      "noisy": {
+        "circuit_condition_failure_rate": 0.0,
+        "failure_rate": 0.0,
+        "finite_interval_available": true,
+        "interval_condition_circuit_joint_coverage": 0.9178530092592593,
+        "interval_marginal_coverage": 0.9822579089506173,
+        "interval_mean_width": 0.6244852088391781,
+        "interval_row_joint_coverage": 0.9454861111111111,
+        "mae": 0.07959049940109253,
+        "p95_absolute_error": 0.29550662636756897,
+        "physical_range_violation_rate": 0.0,
+        "rmse": 0.13266395032405853,
+        "worst_family_mae": 0.11533936858177185,
+        "worst_layer_mae": 0.10151657462120056,
+        "worst_noise_family_mae": 0.10086224973201752,
+        "worst_shot_budget_mae": 0.10329211503267288,
+        "worst_strength_mae": 0.1357416808605194
+      },
+      "paired_effect_vs_noisy": {
+        "ci_high": -0.0009621713973862451,
+        "ci_low": -0.0022721215653459157,
+        "draws": 10000,
+        "estimate": -0.0016233484424992687,
+        "signflip_p_value_two_sided": 9.999000099990002e-05
+      },
+      "raw_cell_affine": {
+        "circuit_condition_failure_rate": 0.9356192129629629,
+        "failure_rate": 0.4708116319444444,
+        "finite_interval_available": true,
+        "interval_condition_circuit_joint_coverage": 0.9198206018518519,
+        "interval_marginal_coverage": 0.9837239583333334,
+        "interval_mean_width": 0.618860119019842,
+        "interval_row_joint_coverage": 0.9492476851851852,
+        "mae": 0.07843180570327904,
+        "p95_absolute_error": 0.28207513615489,
+        "physical_range_violation_rate": 0.019000771604938273,
+        "rmse": 0.12889163024485487,
+        "worst_family_mae": 0.1101343246742814,
+        "worst_layer_mae": 0.10086365667726557,
+        "worst_noise_family_mae": 0.0939493419473984,
+        "worst_shot_budget_mae": 0.1033101235740519,
+        "worst_strength_mae": 0.1346921691457975
+      },
+      "rf": {
+        "circuit_condition_failure_rate": 0.7727430555555556,
+        "failure_rate": 0.48920476466049384,
+        "finite_interval_available": true,
+        "interval_condition_circuit_joint_coverage": 0.9076388888888889,
+        "interval_marginal_coverage": 0.9805073302469136,
+        "interval_mean_width": 0.858672420703253,
+        "interval_row_joint_coverage": 0.9327739197530864,
+        "mae": 0.09228135920210599,
+        "p95_absolute_error": 0.3235155465831048,
+        "physical_range_violation_rate": 0.0,
+        "rmse": 0.15066540127019226,
+        "worst_family_mae": 0.1498929504180381,
+        "worst_layer_mae": 0.12390149622640134,
+        "worst_noise_family_mae": 0.10614747216021041,
+        "worst_shot_budget_mae": 0.1031280561501359,
+        "worst_strength_mae": 0.12681893275341727
+      },
+      "safe_cell_simplex_diagnostic": {
+        "circuit_condition_failure_rate": 0.891087962962963,
+        "failure_rate": 0.40241367669753086,
+        "finite_interval_available": true,
+        "interval_condition_circuit_joint_coverage": 0.9157118055555555,
+        "interval_marginal_coverage": 0.9820722415123457,
+        "interval_mean_width": 0.6177579620534661,
+        "interval_row_joint_coverage": 0.9439236111111111,
+        "mae": 0.07524064181605099,
+        "p95_absolute_error": 0.27964066225999024,
+        "physical_range_violation_rate": 0.002621045524691358,
+        "rmse": 0.12710021540209904,
+        "worst_family_mae": 0.11067500022642092,
+        "worst_layer_mae": 0.09883248662177219,
+        "worst_noise_family_mae": 0.09516626306162713,
+        "worst_shot_budget_mae": 0.09659858751824228,
+        "worst_strength_mae": 0.12591593491989445
+      },
+      "safe_simplex": {
+        "circuit_condition_failure_rate": 0.8730034722222222,
+        "failure_rate": 0.4207995756172839,
+        "finite_interval_available": true,
+        "interval_condition_circuit_joint_coverage": 0.91484375,
+        "interval_marginal_coverage": 0.9813777970679012,
+        "interval_mean_width": 0.6367970771181783,
+        "interval_row_joint_coverage": 0.9408468364197531,
+        "mae": 0.07796715690831363,
+        "p95_absolute_error": 0.285268567546871,
+        "physical_range_violation_rate": 0.0012659143518518518,
+        "rmse": 0.12904676728662565,
+        "worst_family_mae": 0.11533538883357715,
+        "worst_layer_mae": 0.1015820526907376,
+        "worst_noise_family_mae": 0.09745732184689931,
+        "worst_shot_budget_mae": 0.09813570417616521,
+        "worst_strength_mae": 0.1289092942875309
+      },
+      "stage_independence_audit": {
+        "confirmation": {
+          "angle_range_audit": {
+            "affected_circuits": 480,
+            "affected_circuits_by_family": {
+              "hardware_efficient": 0,
+              "ising_trotter": 240,
+              "random_clifford": 0,
+              "warm_start_qaoa": 240
+            },
+            "interpretation": "These rotations remain in gate-count features but do not enter the inherited angle histogram; no periodic remapping was introduced.",
+            "outside_range_entries_by_family": {
+              "hardware_efficient": 0,
+              "ising_trotter": 4320,
+              "random_clifford": 0,
+              "warm_start_qaoa": 4320
+            },
+            "outside_range_rotation_entries": 8640,
+            "released_histogram_range": "[-2*pi, 2*pi] with 0.025*pi bins"
+          },
+          "records": 960,
+          "unique_normalized_qasm": 960,
+          "within_stage_duplicate_groups": []
+        },
+        "confirmation_exclusion_sensitivity": {
+          "excluded_base_circuits": 1,
+          "excluded_base_ids": [
+            "random_clifford:L1:019"
+          ],
+          "paired_global_anchor_mae_effect_vs_unmitigated": {
+            "ci_high": -0.000967342763951605,
+            "ci_low": -0.0022796492832606098,
+            "draws": 10000,
+            "estimate": -0.0016171682377609342
+          },
+          "retained_base_circuits": 959
+        },
+        "cross_stage_overlap_count": 1,
+        "cross_stage_overlap_groups": [
+          {
+            "confirmation_base_ids": [
+              "random_clifford:L1:019"
+            ],
+            "development_base_ids": [
+              "random_clifford:L1:010",
+              "random_clifford:L1:020"
+            ],
+            "normalized_qasm_sha256": "8b30b412857084731d50f3a159ae105a06eac0068ac2c1bec7758756ed977145"
+          }
+        ],
+        "development": {
+          "angle_range_audit": {
+            "affected_circuits": 480,
+            "affected_circuits_by_family": {
+              "hardware_efficient": 0,
+              "ising_trotter": 240,
+              "random_clifford": 0,
+              "warm_start_qaoa": 240
+            },
+            "interpretation": "These rotations remain in gate-count features but do not enter the inherited angle histogram; no periodic remapping was introduced.",
+            "outside_range_entries_by_family": {
+              "hardware_efficient": 0,
+              "ising_trotter": 4320,
+              "random_clifford": 0,
+              "warm_start_qaoa": 4320
+            },
+            "outside_range_rotation_entries": 8640,
+            "released_histogram_range": "[-2*pi, 2*pi] with 0.025*pi bins"
+          },
+          "records": 960,
+          "unique_normalized_qasm": 958,
+          "within_stage_duplicate_groups": [
+            {
+              "base_ids": [
+                "random_clifford:L1:010",
+                "random_clifford:L1:020"
+              ],
+              "normalized_qasm_sha256": "8b30b412857084731d50f3a159ae105a06eac0068ac2c1bec7758756ed977145"
+            },
+            {
+              "base_ids": [
+                "random_clifford:L1:022",
+                "random_clifford:L1:025"
+              ],
+              "normalized_qasm_sha256": "9bbfc0dd3f4c2f292759400031453fc317765d366925008f0bb476ce46426396"
+            }
+          ]
+        },
+        "evidence_class": "confirmation_sensitivity",
+        "hardware_jobs_submitted": 0,
+        "inputs": {
+          "confirmation_circuits": {
+            "path": "data/derived/local_benchmark_confirmation_v2_circuits.jsonl.gz",
+            "sha256": "4f56d79f1ee254664ed6563da1e604b9c680689cec47b8e82c6aed301e9ccac5"
+          },
+          "confirmation_data": {
+            "path": "data/derived/local_benchmark_confirmation_v2.npz",
+            "sha256": "c54ebb20a32f39f5a505b8dc9eb861403e4dc7f9c0ae6fc85e6a56e4572bba22"
+          },
+          "development_circuits": {
+            "path": "data/derived/local_benchmark_v1_circuits.jsonl.gz",
+            "sha256": "4c9d228b93db706b75ba12938bd411761ade04eb7a7d735e121cd1a46f761964"
+          },
+          "predictions": {
+            "path": "results/confirmation/v2/local_within_n512_folds0-4_seed0_predictions.npz",
+            "sha256": "c93379cb5dce701c8effaa9c1d4ac866d64571b75e34a0d2cb801f3e4c80ecf4"
+          }
+        },
+        "qasm_normalization": "strip line edges, remove blank lines, preserve instruction order",
+        "schema_version": 1
+      },
+      "tier_metadata_sensitivity": {
+        "description": "MAE when the metadata-conditioned cell combiner is supplied each assumed strength tier; rows are stratified by simulator-known true tier",
+        "mae_by_true_and_assumed_tier": {
+          "0": {
+            "0": 0.03581003605068046,
+            "1": 0.03774109165567164,
+            "2": 0.048340277049081344
+          },
+          "1": {
+            "0": 0.06492804882245361,
+            "1": 0.06399595447757807,
+            "2": 0.06762501888468839
+          },
+          "2": {
+            "0": 0.13338142286151833,
+            "1": 0.13049632969535216,
+            "2": 0.12591593491989445
+          }
+        },
+        "raw_only_matched_control_mae": 0.07843180570327904,
+        "raw_only_matched_control_method": "raw_cell_affine",
+        "unknown_tier_fallback_mae": 0.07796715690831363,
+        "unknown_tier_fallback_method": "safe_simplex"
+      }
+    }
+  },
+  "input_files": {
+    "archived_ensembles": {
+      "path": "results/development/archived_ensemble_cv.json",
+      "sha256": "a6dcf2e0d7868ae311f61ed72072f71b702a41f427f2e5719f1d418bccbb24a8"
+    },
+    "archived_hardware": {
+      "path": "results/confirmation/archived_hardware_reanalysis.json",
+      "sha256": "f4a07ed96fff12fb5345d21f0afc5bee087edce0b64c55cb7a53c12a275739c7"
+    },
+    "audit": {
+      "path": "results/development/published_result_audit.json",
+      "sha256": "eb242ab6b990181a2b9a0e6aa0fce14bd90b7cd1e5751d9e5410e3e72bd74a90"
+    },
+    "benchmark_manifest": {
+      "path": "data/derived/local_benchmark_confirmation_v2_manifest.json",
+      "sha256": "2683672fd69e745bde4b938ae5ef9c850fd6ed6e7d1c7da72bca1e0dd3e04773"
+    },
+    "demo1_portability": {
+      "path": "results/confirmation/demo1_rf_portability.json",
+      "sha256": "34661a147b7ded427e2bd96eb491e9dcc03e41c6b13230b9699354e2bd33d71b"
+    },
+    "demo2_portability": {
+      "path": "results/confirmation/demo2_rf_portability.json",
+      "sha256": "815a96a2aec38462528008623108e9e4217048d88bc3f9b6962287c95b3cf7f3"
+    },
+    "equivalence": {
+      "path": "results/development/feature_equivalence_atol5e-7.json",
+      "sha256": "a0800e8e8d6cf46aa173f07727c909f6a9cee1a17cafe561903df9559a98f0c2"
+    },
+    "model_seeds": {
+      "path": "results/confirmation/v2/model_seed_sensitivity.json",
+      "sha256": "64adea9418f66f044db3f39bfd09b47d8a528fab2801e2ca59008996db0c2da6"
+    },
+    "model_storage": {
+      "path": "results/resources/v2/model_storage_seed0.json",
+      "sha256": "b4c8cf2dff4c698742d06d8ef80101c51a81ed7564fc350bbf7a4e237854ae03"
+    },
+    "observable": {
+      "path": "results/confirmation/v2/observable_shift_seed0.json",
+      "sha256": "980197e9fa454115f86035993094bfb335ee0d4a70049922918a67794d708b35"
+    },
+    "observable_predictions": {
+      "path": "results/confirmation/v2/observable_shift_seed0_predictions.npz",
+      "sha256": "4dcbf650f1061aae0aa019c9eb330d0e3a42f83a57f84030644d3dac3a96a150"
+    },
+    "resource_fit": {
+      "path": "results/confirmation/v2/local_within_n512_folds0-4_seed0.json",
+      "sha256": "d1b86738dbe16f6169fb29329d134955ac4fea64d2e5ade190cd84f99160c29b"
+    },
+    "resource_fit_time": {
+      "path": "results/resources/v2/local_within_n512_folds0-4_seed0_time.txt",
+      "sha256": "082b7433ed949ab0df2b26ea48120829d68370865f942dfe4d2a526d9716ab6b"
+    },
+    "resource_observable_time": {
+      "path": "results/resources/v2/observable_shift_seed0_time.txt",
+      "sha256": "de76ef5348615f2f0df6292cada275b60d10618007023397025009d4b9bb82c4"
+    },
+    "resource_shifts_time": {
+      "path": "results/resources/v2/local_shifts_seed0_time.txt",
+      "sha256": "39d219b40f1f2ba047b5f03f43b09944555b6325b28b5b0b6cd3577d340d1740"
+    },
+    "shifts": {
+      "path": "results/confirmation/v2/local_shifts_aggregated_seed0.json",
+      "sha256": "8a30c2b7ece970df7ceb146dd44ada5f12fbd4187a7a729a21a9465e32f8d37e"
+    },
+    "stage_audit": {
+      "path": "results/confirmation/v2/stage_independence_audit.json",
+      "sha256": "182355300a724fb930f4b764f38c451adb39928764209d3cf2a38c646e58c5d4"
+    },
+    "training_curve": {
+      "path": "results/confirmation/v2/training_size_curve.json",
+      "sha256": "806b9ddf7c6cdf2bebe764ded68141d56133c3d7d315a70b9ee8c4aafba711f5"
+    },
+    "within": {
+      "path": "results/confirmation/v2/local_within_n512_folds0-4_seed0.json",
+      "sha256": "d1b86738dbe16f6169fb29329d134955ac4fea64d2e5ade190cd84f99160c29b"
+    },
+    "within_predictions": {
+      "path": "results/confirmation/v2/local_within_n512_folds0-4_seed0_predictions.npz",
+      "sha256": "c93379cb5dce701c8effaa9c1d4ac866d64571b75e34a0d2cb801f3e4c80ecf4"
+    }
+  },
+  "resource_rows": [
+    {
+      "classical_cost": "3.17 s cold tests; 2.50 s after one-line repair",
+      "data_or_workload": "659.7 MB DOI archive; 9 tests; two demos",
+      "evidence": "DOI artifact recovery",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "archived data only"
+    },
+    {
+      "classical_cost": "CPU only; no retraining discrepancy beyond roundoff",
+      "data_or_workload": "80 circuits; two 30-seed RF repeats",
+      "evidence": "Legacy-to-current portability",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "none"
+    },
+    {
+      "classical_cost": "14.0 s wall; 219 MiB main-process peak; 16 requested threads",
+      "data_or_workload": "960 base circuits; 103,680 rows",
+      "evidence": "Local benchmark generation",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "328.9 M nominal shots; local simulation only"
+    },
+    {
+      "classical_cost": "137.1 s wall; 652 s user; 478% CPU; 786 MiB GNU-time max RSS; 149.1 MB measured serialized model footprint (models omitted)",
+      "data_or_workload": "five confirmatory folds; released-style per-observable RF",
+      "evidence": "In-domain grouped confirmation",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "no additional shots beyond local data"
+    },
+    {
+      "classical_cost": "18.3--140.6 s wall per fit; CPU only",
+      "data_or_workload": "5 nested availability-pool sizes; seeds 0--4 at n=512; 9 unique fits",
+      "evidence": "Training-size and seed sensitivities",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "no additional shots beyond local data"
+    },
+    {
+      "classical_cost": "598.9 s wall; 2973 s user; 499% CPU; 886 MiB GNU-time max RSS",
+      "data_or_workload": "10 circuit/depth/noise/shot holdouts; 11th test is observable shift",
+      "evidence": "One-axis robustness suite",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "no additional shots beyond local data"
+    },
+    {
+      "classical_cost": "87.0 s wall; 294 s user; 338% CPU; 945 MiB GNU-time max RSS",
+      "data_or_workload": "train on Z0/Z1; test on Z0Z1/Z2Z3; five folds",
+      "evidence": "Unseen-ZZ transfer",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "no additional shots beyond local data"
+    },
+    {
+      "classical_cost": "statistics on distributed predictions",
+      "data_or_workload": "500 training + 2,500 test circuits",
+      "evidence": "Archived ibm_algiers reanalysis",
+      "new_qpu_jobs": 0,
+      "qpu_equivalent": "30 M ML4QEM versus 50 M ZNE source shots"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,10 @@
+--- a/blackwater/data/generators/rb.py
++++ b/blackwater/data/generators/rb.py
+@@ -91,7 +91,7 @@ def rb_generator(
+             circuit_graph=graph_data,
+             observable=encode_pauli_sum_op(observable),
+             ideal_exp_value=ideal_exp_val,
+-            noisy_exp_value=noisy_exp_val,
++            noisy_exp_values=[noisy_exp_val],
+             circuit_depth=circuit.depth(),
+         ), circuit, observable

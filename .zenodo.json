@@ -1,0 +1,36 @@
+{
+  "title": "ML4QEM reuse",
+  "description": "Maintained scientific-core implementation for ML4QEM artifact recovery, portability checks, and grouped local reuse analysis.",
+  "creators": [
+    {
+      "name": "Yan, Xianquan",
+      "affiliation": "Department of Physics and Department of Computer Science, National University of Singapore",
+      "orcid": "0009-0009-6952-421X"
+    }
+  ],
+  "license": "Apache-2.0",
+  "upload_type": "software",
+  "keywords": [
+    "quantum error mitigation",
+    "machine learning",
+    "reproducibility",
+    "software portability"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.13769804",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22168376",
+      "relation": "isSupplementedBy",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://github.com/sarinstein-yan/ml4qem-reuse",
+      "relation": "isAlternateIdentifier",
+      "scheme": "url"
+    }
+  ]
+}

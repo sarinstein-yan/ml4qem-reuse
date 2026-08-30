@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this software and its companion data archive."
+title: "ML4QEM reuse"
+type: software
+version: 1.0.0
+date-released: 2026-08-30
+authors:
+  - family-names: "Yan"
+    given-names: "Xianquan"
+    affiliation: "Department of Physics and Department of Computer Science, National University of Singapore"
+    email: "yanx@u.nus.edu"
+    orcid: "https://orcid.org/0009-0009-6952-421X"
+repository-code: "https://github.com/sarinstein-yan/ml4qem-reuse"
+url: "https://github.com/sarinstein-yan/ml4qem-reuse"
+license: Apache-2.0
+references:
+  - type: data
+    title: "ML4QEM reuse data"
+    version: 1.0.0
+    date-released: 2026-08-30
+    doi: "10.5281/zenodo.22168376"
+    authors:
+      - family-names: "Yan"
+        given-names: "Xianquan"
+        affiliation: "Department of Physics and Department of Computer Science, National University of Singapore"
+        email: "yanx@u.nus.edu"
+        orcid: "https://orcid.org/0009-0009-6952-421X"

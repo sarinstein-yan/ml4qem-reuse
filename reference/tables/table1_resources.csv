@@ -1,0 +1,9 @@
+evidence,data_or_workload,classical_cost,qpu_equivalent,new_qpu_jobs
+DOI artifact recovery,659.7 MB DOI archive; 9 tests; two demos,3.17 s cold tests; 2.50 s after one-line repair,archived data only,0
+Legacy-to-current portability,80 circuits; two 30-seed RF repeats,CPU only; no retraining discrepancy beyond roundoff,none,0
+Local benchmark generation,"960 base circuits; 103,680 rows",14.0 s wall; 219 MiB main-process peak; 16 requested threads,328.9 M nominal shots; local simulation only,0
+In-domain grouped confirmation,five confirmatory folds; released-style per-observable RF,137.1 s wall; 652 s user; 478% CPU; 786 MiB GNU-time max RSS; 149.1 MB measured serialized model footprint (models omitted),no additional shots beyond local data,0
+Training-size and seed sensitivities,5 nested availability-pool sizes; seeds 0--4 at n=512; 9 unique fits,18.3--140.6 s wall per fit; CPU only,no additional shots beyond local data,0
+One-axis robustness suite,10 circuit/depth/noise/shot holdouts; 11th test is observable shift,598.9 s wall; 2973 s user; 499% CPU; 886 MiB GNU-time max RSS,no additional shots beyond local data,0
+Unseen-ZZ transfer,train on Z0/Z1; test on Z0Z1/Z2Z3; five folds,87.0 s wall; 294 s user; 338% CPU; 945 MiB GNU-time max RSS,no additional shots beyond local data,0
+Archived ibm_algiers reanalysis,"500 training + 2,500 test circuits",statistics on distributed predictions,30 M ML4QEM versus 50 M ZNE source shots,0
